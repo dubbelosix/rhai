@@ -3,7 +3,7 @@
 use crate::tokenizer::is_valid_identifier;
 use crate::{Position, RhaiError, ERR};
 #[cfg(feature = "no_std")]
-use core_error::Error;
+use snafu::Error;
 #[cfg(not(feature = "no_std"))]
 use std::error::Error;
 use std::fmt;

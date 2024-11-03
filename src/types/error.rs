@@ -2,7 +2,7 @@
 
 use crate::{Dynamic, ParseErrorType, Position, INT};
 #[cfg(feature = "no_std")]
-use core_error::Error;
+use snafu::Error;
 #[cfg(not(feature = "no_std"))]
 use std::error::Error;
 use std::fmt;
